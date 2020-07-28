@@ -1,4 +1,4 @@
-package main.db.table
+package db.table
 
 import com.example.common2.Note
 import org.jetbrains.exposed.sql.ResultRow

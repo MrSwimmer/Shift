@@ -1,9 +1,9 @@
-package main.repository
+package repository
 
 import com.example.common2.Note
-import main.db.dbQuery
-import main.db.table.Notes
-import main.db.table.toNote
+import db.dbQuery
+import db.table.Notes
+import db.table.toNote
 import org.jetbrains.exposed.sql.selectAll
 
 class NotesRepository {

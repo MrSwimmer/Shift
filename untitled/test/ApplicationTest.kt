@@ -1,6 +1,6 @@
 package com.example
 
-import main.module
+import module
 import io.ktor.http.*
 import kotlin.test.*
 import io.ktor.server.testing.*

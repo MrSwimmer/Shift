@@ -1,4 +1,4 @@
-package main.db
+package db
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking

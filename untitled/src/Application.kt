@@ -1,8 +1,6 @@
-package main
-
 import com.example.common2.Note
-import main.db.DatabaseFactory
-import main.repository.NotesRepository
+import db.DatabaseFactory
+import repository.NotesRepository
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install
