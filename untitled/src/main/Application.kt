@@ -1,4 +1,4 @@
-package com.example.main.kotlin
+package main
 
 import com.example.common2.Note
 import main.db.DatabaseFactory
