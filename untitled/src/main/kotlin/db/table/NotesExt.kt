@@ -1,4 +1,4 @@
-package com.example.db.table
+package main.kotlin.db.table
 
 import com.example.common2.Note
 import org.jetbrains.exposed.sql.ResultRow

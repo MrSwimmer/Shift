@@ -1,9 +1,9 @@
-package com.example.repository
+package main.kotlin.repository
 
 import com.example.common2.Note
-import com.example.db.dbQuery
-import com.example.db.table.Notes
-import com.example.db.table.toNote
+import main.kotlin.db.dbQuery
+import main.kotlin.db.table.Notes
+import main.kotlin.db.table.toNote
 import org.jetbrains.exposed.sql.selectAll
 
 class NotesRepository {
