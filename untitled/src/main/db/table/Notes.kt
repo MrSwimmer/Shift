@@ -1,4 +1,4 @@
-package main.kotlin.db.table
+package main.db.table
 
 import org.jetbrains.exposed.sql.Column
 import org.jetbrains.exposed.sql.Table

@@ -1,8 +1,8 @@
 package com.example.main.kotlin
 
 import com.example.common2.Note
-import main.kotlin.db.DatabaseFactory
-import main.kotlin.repository.NotesRepository
+import main.db.DatabaseFactory
+import main.repository.NotesRepository
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install

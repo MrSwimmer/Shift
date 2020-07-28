@@ -1,4 +1,4 @@
-package main.kotlin.db
+package main.db
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
