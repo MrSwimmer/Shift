@@ -5,11 +5,9 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.common2.Note
 import com.example.shift.R
-import com.example.shift.feature.note.domain.entity.Note
 import com.example.shift.feature.note.detail.presentaion.NoteDetailActivity
 import com.example.shift.feature.note.list.di.NoteListViewModelFactory
 import kotlinx.android.synthetic.main.activity_note_list.*

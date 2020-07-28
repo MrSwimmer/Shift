@@ -1,4 +1,4 @@
-package com.example.shift.feature.note.domain.entity
+package com.example.common2
 
 import java.io.Serializable
 
