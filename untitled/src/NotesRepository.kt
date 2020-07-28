@@ -26,4 +26,12 @@ class NotesRepository {
             "Описание 9"
         )
     )
+
+    fun add(note: Note) {
+
+    }
+
+    fun delete(id: Long) {
+
+    }
 }
