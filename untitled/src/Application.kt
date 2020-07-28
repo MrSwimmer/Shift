@@ -1,6 +1,8 @@
 package com.example
 
 import com.example.common2.Note
+import com.example.db.DatabaseFactory
+import com.example.repository.NotesRepository
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install
@@ -10,6 +12,7 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.request.receive
 import io.ktor.response.respond
 import io.ktor.routing.*
+import java.net.URI
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
@@ -21,6 +24,20 @@ fun Application.module(testing: Boolean = false) {
     }
 
     val repository = NotesRepository()
+
+    val dbUri = URI(environment.config.property("db.jdbcUrl").getString())
+
+    val username: String = dbUri.userInfo.split(":")[0]
+    val password: String = dbUri.userInfo.split(":")[1]
+    val dbUrl = ("jdbc:postgresql://${dbUri.host}:${dbUri.port}${dbUri.path}")
+
+    DatabaseFactory(
+        dbUrl = dbUrl,
+        dbPassword = password,
+        dbUser = username
+    ).apply {
+        init()
+    }
 
     routing {
         route("/notes") {
